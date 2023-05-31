@@ -7,7 +7,7 @@ export const GenerateGameRoom = ({gameRoomId, setGameRoom}) => {
         const response = await getInvite()
 
         if (response.status === 200) {
-            setGameRoom(response.data)
+            setGameRoom(response.data.invite)
         }
     }
 

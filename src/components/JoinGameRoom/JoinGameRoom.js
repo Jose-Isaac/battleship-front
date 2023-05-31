@@ -16,6 +16,7 @@ export const JoinGameRoom = (
 
     const join = () => {
         setGameRoom(invite)
+        console.log("join room: username: " + yourProfile)
         wsClient.send(
             "/app/join",
             {},
